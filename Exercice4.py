@@ -8,5 +8,7 @@ if P2 <= 0:
         exit()
 if P1 > P2 :
     print(f"The older age is: {P1}")
-else :
+elif P2 > P1:
     print(f"The older age is: {P2}")
+else :
+    print("Both people are the same age!")
