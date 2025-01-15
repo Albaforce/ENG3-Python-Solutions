@@ -50,7 +50,8 @@ while True:
     elif choice == '10':
         path = input("enter the path of the file : ")
         file =open(f"{path}", 'r') 
-        numbers = file.read()
+        numbers = eval(file.read()) # using eval only in trusted file, cause it can execute any code
+        file.close()
         print(numbers)
     else:
         print("Invalid choice")
